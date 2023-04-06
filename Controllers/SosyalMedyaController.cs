@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace MvcCv.Controllers
 {
+    [Authorize]
     public class SosyalMedyaController : Controller
     {
         // GET: SosyalMedya

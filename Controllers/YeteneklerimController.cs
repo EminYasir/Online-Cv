@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using MvcCv.Models.Entity;
 namespace MvcCv.Controllers
 {
+    [Authorize]
     public class YeteneklerimController : Controller
     {
         // GET: Yeteneklerim

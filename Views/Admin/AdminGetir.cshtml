@@ -1,6 +1,6 @@
-﻿
+﻿@model MvcCv.Models.Entity.TblAdmin
 @{
-    ViewBag.Title = "DeneyimEkle";
+    ViewBag.Title = "AdminGetir";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 <html>
@@ -15,18 +15,19 @@
                         <div class="card-header p-2">
                         </div><!-- /.card-header -->
                         <div class="card-body">
-                            <h3>Yeni Deneyim Ekleme Sayfası</h3>
+                            <h3>Admin Güncelleme Sayfası</h3>
                             <br />
                             <form method="post">
-                                <input type="text" name="Baslik" class="form-control" placeholder="Başlığı Yazınız.." />
+                                @Html.Label("Admin ID")
+                                @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
                                 <br />
-                                <input type="text" name="AltBaslik" class="form-control" placeholder="Alt Başlığı Yazınız.." />
+                                @Html.Label("Kullanıcı Adı")
+                                @Html.TextBoxFor(x => x.Kullaniciadi, new { @class = "form-control" })
                                 <br />
-                                <input type="text" name="Tarih" class="form-control" placeholder="Çalışma Tarihi" />
+                                @Html.Label("Şifre")
+                                @Html.TextBoxFor(x => x.Sifre, new { @class = "form-control" })
                                 <br />
-                                <textarea class="form-control" name="Aciklama" rows="6" placeholder="Açıklama Giriniz.."></textarea>
-                                <br />
-                                <button class="btn btn-info">Kaydet</button>
+                                <button class="btn btn-warning">Güncelleme</button>
                             </form>
                         </div>
                         <!-- /.tab-content -->

@@ -9,6 +9,7 @@ using System.Web.Security;
 
 namespace MvcCv.Controllers
 {
+    [Authorize]
     public class HobiController : Controller
     {
         // GET: Hobi

@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace MvcCv.Controllers
 {
+    [Authorize]
     public class SertifikaController : Controller
     {
         // GET: Sertifika
