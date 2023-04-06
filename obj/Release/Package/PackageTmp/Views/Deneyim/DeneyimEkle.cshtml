@@ -3,17 +3,40 @@
     ViewBag.Title = "DeneyimEkle";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+<html>
+<body class="hold-transition sidebar-mini">
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
 
-<h3>Yeni Deneyim Ekleme Sayfası</h3>
-<br/>
-<form method="post">
-    <input type="text" name="Baslik" class="form-control" placeholder="Başlığı Yazınız.." />
-    <br />
-    <input type="text" name="AltBaslik" class="form-control" placeholder="Alt Başlığı Yazınız.." />
-    <br />
-    <input type="text" name="Tarih" class="form-control" placeholder="Çalışma Tarihi" />
-    <br />
-    <textarea class="form-control" name="Aciklama" rows="6" placeholder="Açıklama Giriniz.."></textarea>
-    <br />
-    <button class="btn btn-info">Kaydet</button>
-</form>
+                <!-- /.col -->
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header p-2">
+                        </div><!-- /.card-header -->
+                        <div class="card-body">
+                            <h3>Yeni Deneyim Ekleme Sayfası</h3>
+                            <br />
+                            <form method="post">
+                                <input type="text" name="Baslik" class="form-control" placeholder="Başlığı Yazınız.." />
+                                <br />
+                                <input type="text" name="AltBaslik" class="form-control" placeholder="Alt Başlığı Yazınız.." />
+                                <br />
+                                <input type="text" name="Tarih" class="form-control" placeholder="Çalışma Tarihi" />
+                                <br />
+                                <textarea class="form-control" name="Aciklama" rows="6" placeholder="Açıklama Giriniz.."></textarea>
+                                <br />
+                                <button class="btn btn-info">Kaydet</button>
+                            </form>
+                        </div>
+                        <!-- /.tab-content -->
+                    </div><!-- /.card-body -->
+                </div>
+                <!-- /.nav-tabs-custom -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+</body>
+</html>

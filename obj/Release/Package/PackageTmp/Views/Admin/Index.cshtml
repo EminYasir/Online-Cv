@@ -1,0 +1,52 @@
+﻿
+@using MvcCv.Models.Entity
+@model List<TblAdmin>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<html>
+<body class="hold-transition sidebar-mini">
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- /.col -->
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header p-2">
+                        </div><!-- /.card-header -->
+                        <div class="card-body">
+                            <h2>Admin Listesi</h2>
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Kullanıcı Adı</th>
+                                    <th>Sil</th>
+                                    <th>Düzenle</th>
+                                </tr>
+                                @foreach (var x in Model)
+                                {
+                                    <tr>
+                                        <td>@x.ID</td>
+                                        <td>@x.Kullaniciadi</td>
+                                        <td><a href="/Admin/AdminSil/@x.ID" class="btn btn-danger">Sil</a></td>
+                                        <td><a href="/Admin/AdminGetir/@x.ID" class="btn btn-success">Düzenle</a></td>
+                                    </tr>
+                                }
+                            </table>
+                            <br />
+                            <a href="/Admin/AdminEkle/" class="btn btn-warning">Yeni Admin Ekle</a>
+                        </div>
+                        <!-- /.tab-content -->
+                    </div><!-- /.card-body -->
+                </div>
+                <!-- /.nav-tabs-custom -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+</body>
+</html>

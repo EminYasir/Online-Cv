@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "AdminEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<html>
+<body class="hold-transition sidebar-mini">
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- /.col -->
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header p-2">
+                        </div><!-- /.card-header -->
+                        <div class="card-body">
+                            <h3>Yeni Admin Ekleme Sayfası</h3>
+                            <br />
+                            <form method="post">
+                                <input type="text" name="Kullaniciadi" class="form-control" placeholder="Kullanıcı Adını Giriniz.." />
+                                <br />
+                                <input type="text" name="Sifre" class="form-control" placeholder="Şifre Giriniz.." />
+                                <br />
+                                <button class="btn btn-info">Kaydet</button>
+                            </form>
+
+                        </div>
+                        <!-- /.tab-content -->
+                    </div><!-- /.card-body -->
+                </div>
+                <!-- /.nav-tabs-custom -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+</body>
+</html>
