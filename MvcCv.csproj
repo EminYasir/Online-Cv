@@ -453,7 +453,7 @@
     <Content Include="Views\Default\Egitim.cshtml" />
     <Content Include="Views\Default\Yeteneklerim.cshtml" />
     <Content Include="Views\Default\Hobilerim.cshtml" />
-    <Content Include="Views\Default\Sertifikalarım.cshtml" />
+    <Content Include="Views\Default\Sertifikalarim.cshtml" />
     <Content Include="Views\Default\iletisim.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Hakkimda\Index.cshtml" />
